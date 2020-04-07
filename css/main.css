@@ -147,7 +147,7 @@ header .brand em {
     /* Center text */
     text-align: center;
     /* Place the appropriate background image - should start on right top and cover the area */
-    background-image: url('./images/coffee-beans.jpg') ;
+    background-image: url('../images/coffee-beans.jpg') ;
     background-size: 100%;
     background-position: right top;
    
