@@ -15,21 +15,36 @@
 /* Universal selector - clear browser defaults */
 * {
     /* set box sizing to border-box */
+    box-sizing: border-box;
     /* clear margin and padding */
+    margin: 0;
+    padding: 0;
+    
 }
 
 /* Body Styles */
 body {
 
     /* Set font properties (size, color, family) */
+
+    background-color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #FFFFFF;
     /* Create some spacing between each line of page */
+    line-height: normal;
 
 }
 
 /* Container is a div in each section, which wraps content to center */
 .container {
     /* Set the max width as percentage and center with margin */
-   
+    max-width: 100%;
+    margin: center;
+
+    
+ 
    /* This hides scrollbars if content is too big for container and also clears floats (for branding and nav) */
     overflow: hidden;
 }
@@ -37,23 +52,49 @@ body {
 /* All the anchor tags on the page */
 a {
     /* Remove underlining and set text color */
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* All the anchor tags in hover state */
 a:hover {
     /* Set the text color */
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* Base button style for both the dark and light buttons */
 button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* Dark button (adds on to styles of button) */
 .btn-dark {
+    background-color: #523249;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
 }
 
 /* Light button (adds on to styles of button) */
 .btn-light {
+    background-color: #DBEBC0;
+    border: none;
+    color: #322B25;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /*******************************************************
@@ -63,44 +104,77 @@ button {
 /* Header section */
 header {
     /* Set background, height, padding and border */
+    background: #322B25;
+    height: 100px;
+    padding: 20px;
+    border: 10px;
+  
+
+
 }
 
 /* Galactic Coffee logo */
 header .brand {
     /* Position by floating left */
+    float: left;
+
 }
 
 /* Main navigation */
 header nav {
     /* Position by floating right (no need to clear float, container is overflow:hidden which takes care of this) */
+    float: right;
 }
 
 /* Navigation item */
 header li {
     /* Set display to inline-block (no need to float if we do this) */
+    display: inline-block;
     /* Create space between each item by setting padding */
+    padding: 20px;
 }
 
 /* Selector targets the first word of the brand "Galactic" */
 header .brand em {
     /* Set the text color */
+    color: #DBEBC0;
 }
 
 /* Banner - contains tagline for site with background image */
 #banner {
     /* Set the minimum height */
+    min-height: 200px;
     /* Center text */
+    text-align: center;
     /* Place the appropriate background image - should start on right top and cover the area */
+    background-image: url('./images/coffee-beans.jpg') ;
+    background-size: 100%;
+    background-position: right top;
+   
+    
+    background-repeat: no-repeat;
+   
 }
 
 /* The first sentence in the banner */
 #banner h2 {
     /* Set to a large font size and set margins for positioning properly */
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 /* The remainder of the text in banner */
 #banner p {
     /* Set font size and position property with margins */
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
 }
 
 /*******************************************************
@@ -109,22 +183,32 @@ header .brand em {
 
  /* Main section for subscription */
 #subscription {
+    padding: 20px;
+    background: #322B25;
     /* Set padding and background */
 }
 
 /* Text for subcription section */
 #subscription h2 {
     /* Float left and set the margin */
+    float: left;
+    margin: 20px;
 }
 
 /* Subscription form */
 #subscription form {
     /* Float right. No need to clear the float b/c of overflow:hidden on container */
+    float: right;
 }
 
 /* Input field in subscription form */
 #subscription input[type="email"] {
     /* Set display to inline-block, height, width, padding */
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+    padding: 20px;
+    
 }
 
 /*******************************************************
@@ -134,20 +218,30 @@ header .brand em {
 /* Amenities section */
 #amenities {
     /* Set margin */
+    margin: 10px;
     /* Set text color and align center */
+    color: #ffffff;
+    text-align: center;
+    
 }
 
 /* Feature box within the amenities (there are 3 in total) */
 #amenities .feature {
     /* Float each feature left ... no need to clear b/c of the container */
+    float: left;
     /* Set each width as percentage */
+    width: 33%;
     /* Set padding within each feature */
+    padding: 20px;
+    color: #000000
 }
 
 /* Feature image */
 #amenities .feature img {
     /* Set width to 100% of parent element */
+    width: 100%;
     /* Set border radius to round corners of image */
+    border-radius: 20px;
 }
 
 /*******************************************************
@@ -155,4 +249,9 @@ header .brand em {
 /********************************************************/
 footer {
     /* Set margin, background color, padding and align text to the center */
+    background-color: #523249;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #DBEBC0;
 }
